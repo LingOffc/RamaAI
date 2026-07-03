@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['garbage-detection - v1 2024-08-11 5-18am', 'kantong-sampah']
+
+roboflow:
+  workspace: coba-j6eos
+  project: plastik-kresek
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/coba-j6eos/plastik-kresek/dataset/3

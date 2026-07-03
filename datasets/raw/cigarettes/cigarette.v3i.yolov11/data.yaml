@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['cigarette']
+
+roboflow:
+  workspace: study-iksue
+  project: cigarette-7yeus
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/study-iksue/cigarette-7yeus/dataset/3

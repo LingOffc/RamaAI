@@ -1,0 +1,50 @@
+<annotation>
+	<folder>images</folder>
+	<filename>Datacluster Bottles and Cups (52).jpg</filename>
+	<path>E:\dataçluster_work\dataset\Bottles and Cups\images\Datacluster Bottles and Cups (52).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2448</width>
+		<height>3264</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>421</xmin>
+			<ymin>1092</ymin>
+			<xmax>1161</xmax>
+			<ymax>2932</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1076</xmin>
+			<ymin>337</ymin>
+			<xmax>2141</xmax>
+			<ymax>2797</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>796</xmin>
+			<ymin>122</ymin>
+			<xmax>1276</xmax>
+			<ymax>1447</ymax>
+		</bndbox>
+	</object>
+</annotation>

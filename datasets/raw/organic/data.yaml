@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['organic']
+
+roboflow:
+  workspace: mohamed-awad
+  project: organic-wjqwd
+  version: 7
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/mohamed-awad/organic-wjqwd/dataset/7

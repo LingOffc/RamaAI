@@ -1,0 +1,26 @@
+<annotation>
+	<folder>cardboard</folder>
+	<filename>dc_cardboard_202402_u4T8gbbk.jpg</filename>
+	<path>D:\data_cluster\kaggle datasets\cardboard\dc_cardboard_202402_u4T8gbbk.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4000</width>
+		<height>3000</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>cardboard</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>854</xmin>
+			<ymin>410</ymin>
+			<xmax>2806</xmax>
+			<ymax>2483</ymax>
+		</bndbox>
+	</object>
+</annotation>

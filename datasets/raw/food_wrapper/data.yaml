@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['LayYellow', 'Laygreen']
+
+roboflow:
+  workspace: king-mongkuts-university-of-technology-north-bangkok-mskv3
+  project: snack-ubufj
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/king-mongkuts-university-of-technology-north-bangkok-mskv3/snack-ubufj/dataset/1

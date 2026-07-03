@@ -1,0 +1,9 @@
+{
+    "openclaw_url": "http://127.0.0.1:18789",
+    "openclaw_token": "cde64959c3c083b410c5b9ba0fd2742b8949cabccf8ab68",
+    "whatsapp_number": "+6285668528782",
+    "yolo_model_path": "yolov8m.pt",
+    "detection_confidence": 0.5,
+    "pose_confidence": 0.6,
+    "cooldown_seconds": 5
+}
