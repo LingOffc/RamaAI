@@ -7,6 +7,11 @@
 
 RAMA AI adalah prototipe sistem pemantauan lingkungan berbasis Artificial Intelligence untuk mendeteksi aktivitas pembuangan sampah sembarangan secara real-time melalui kamera. Sistem ini memadukan Computer Vision, deteksi objek, pose estimation, dan laporan otomatis melalui WhatsApp agar pelanggaran dapat terdokumentasi dengan bukti foto.
 
+## Media Sosial dan Video Penjelasan
+
+- Instagram RAMA AI: [@rama.assistant](https://www.instagram.com/rama.assistant/)
+- Video penjelasan project: [Instagram Reel RAMA AI](https://www.instagram.com/reel/DaVkCzAyWYm/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)
+
 ## Dokumentasi Visual
 
 Gambar berikut adalah materi visual utama yang digunakan untuk menjelaskan masalah, solusi, alur sistem, target pengguna, serta fitur WhatsApp RAMA AI.
@@ -162,18 +167,22 @@ Sebagian dataset sudah memiliki file `data.yaml` dengan format YOLO, misalnya:
 - `datasets/raw/organic/data.yaml`
 - `datasets/raw/plastic_bag/data.yaml`
 
-Rencana sumber data yang ditampilkan pada materi visual project:
+### Sumber Dataset
 
-| Kategori | Jumlah gambar |
-| --- | ---: |
-| Kantong plastik | 2045 |
-| Kemasan makanan | 516 |
-| Puntung rokok | 384 |
-| Kaleng | 243 |
-| Kertas | 223 |
-| Sampah organik | 179 |
-| Kardus | 120 |
-| Botol plastik | 100 |
+Sumber dataset berikut diambil dari file metadata bawaan dataset seperti `README.dataset.txt`, `README.roboflow.txt`, dan `data.yaml`.
+
+| Kategori | Sumber | Jumlah gambar | Format | Lisensi/Catatan |
+| --- | --- | ---: | --- | --- |
+| Kaleng | [Roboflow - dataset ademsari kaleng](https://universe.roboflow.com/unkn0wn/dataset-ademsari-kaleng/dataset/1) | 243 | YOLOv11 | CC BY 4.0 |
+| Puntung rokok | [Roboflow - cigarette](https://universe.roboflow.com/study-iksue/cigarette-7yeus/dataset/3) | 364 | YOLOv11 | CC BY 4.0 |
+| Kemasan makanan | [Roboflow - snack](https://universe.roboflow.com/king-mongkuts-university-of-technology-north-bangkok-mskv3/snack-ubufj/dataset/1) | 516 | YOLOv11 | CC BY 4.0 |
+| Sampah organik | [Roboflow - organic](https://universe.roboflow.com/mohamed-awad/organic-wjqwd/dataset/7) | 179 | YOLOv11 | CC BY 4.0 |
+| Kantong plastik | [Roboflow - plastik kresek](https://universe.roboflow.com/coba-j6eos/plastik-kresek/dataset/3) | 2045 | YOLOv11 | CC BY 4.0 |
+| Kertas | [Roboflow - Waste classification Paper](https://universe.roboflow.com/trash-tech-9qc7i/waste-classification-paper) | 224 | Folder format | CC BY 4.0 |
+| Kardus | Kaggle/DataCluster, berdasarkan path anotasi lokal `kaggle datasets/cardboard` | 120 | Pascal VOC XML | Metadata URL/lisensi tidak tersedia di folder dataset |
+| Botol plastik | DataCluster Bottles and Cups, berdasarkan nama file dan path anotasi lokal | 100 | Pascal VOC XML | Metadata URL/lisensi tidak tersedia di folder dataset |
+
+Catatan: jumlah gambar mengikuti metadata dataset yang tersedia di dalam folder masing-masing. Pada materi presentasi, jumlah gambar kertas diringkas menjadi 223, sedangkan metadata Roboflow pada repository mencatat 224 gambar.
 
 ## Persyaratan
 
