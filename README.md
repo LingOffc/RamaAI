@@ -1,6 +1,38 @@
-# RAMA AI
+<div align="center">
+  <img src="assets/readme/rama-avatar.png" alt="Avatar RAMA AI" width="180">
+  <h1>RAMA AI</h1>
+  <p><strong>Pemantau AI Berbasis Kamera untuk Deteksi Pembuangan Sampah Sembarangan</strong></p>
+  <p>Project LKS Kecerdasan Buatan AI Eksebisi</p>
+</div>
 
-RAMA AI adalah prototipe sistem pemantauan lingkungan berbasis Artificial Intelligence untuk mendeteksi aktivitas pembuangan sampah sembarangan secara real-time melalui kamera. Sistem ini dibuat untuk kebutuhan lomba LKS Kecerdasan Buatan AI Eksebisi dengan fokus pada penerapan Computer Vision, deteksi objek, pose estimation, dan pengiriman laporan otomatis melalui WhatsApp.
+RAMA AI adalah prototipe sistem pemantauan lingkungan berbasis Artificial Intelligence untuk mendeteksi aktivitas pembuangan sampah sembarangan secara real-time melalui kamera. Sistem ini memadukan Computer Vision, deteksi objek, pose estimation, dan laporan otomatis melalui WhatsApp agar pelanggaran dapat terdokumentasi dengan bukti foto.
+
+## Dokumentasi Visual
+
+Gambar berikut adalah materi visual utama yang digunakan untuk menjelaskan masalah, solusi, alur sistem, target pengguna, serta fitur WhatsApp RAMA AI.
+
+![Rumusan masalah, ide solusi, dan target pengguna RAMA AI](assets/readme/rumusan-masalah-solusi-target.png)
+
+![Alur singkat deteksi RAMA AI](assets/readme/alur-singkat.png)
+
+![Alur laporan otomatis ke WhatsApp Ketua RT](assets/readme/laporan-whatsapp-rt.png)
+
+![Fitur chat edukasi AI melalui WhatsApp](assets/readme/chat-ai-edukasi.png)
+
+![Fitur Chat RT dan Fitur Chat AI](assets/readme/fitur-chat-rt-ai.png)
+
+> Catatan: simpan gambar presentasi ke folder `assets/readme/` dengan nama file yang sama seperti path di atas agar gambar tampil di GitHub.
+
+## Persona RAMA
+
+RAMA digambarkan sebagai asisten AI yang ramah, edukatif, dan dekat dengan masyarakat. Avatar RAMA digunakan sebagai identitas visual pada materi presentasi dan simulasi WhatsApp sehingga sistem tidak terasa seperti alat pengawasan yang kaku, tetapi seperti asisten lingkungan yang membantu warga dan pengurus RT/RW.
+
+Peran persona RAMA:
+
+- Menjadi wajah utama sistem pada dokumentasi dan demo.
+- Membuat fitur WhatsApp terasa lebih mudah dipahami masyarakat.
+- Menguatkan branding project sebagai solusi AI yang edukatif.
+- Menjelaskan hasil analisis sampah dengan bahasa sederhana.
 
 ## Latar Belakang
 
@@ -8,12 +40,45 @@ Pembuangan sampah sembarangan masih menjadi masalah yang sering terjadi di lingk
 
 RAMA AI hadir sebagai solusi berbasis AI yang dapat membantu pengawasan lingkungan secara otomatis. Sistem membaca gambar dari kamera, menganalisis keberadaan sampah, mendeteksi gestur manusia yang mengarah pada aktivitas membuang atau menjatuhkan objek, lalu mengirimkan bukti gambar ke nomor WhatsApp yang ditentukan.
 
+## Rumusan Masalah
+
+Berdasarkan kebutuhan pengawasan lingkungan, masalah utama yang ingin diselesaikan adalah pembuangan sampah sembarangan. Masalah tersebut muncul karena:
+
+- Pengawasan terbatas dan sulit memantau satu titik secara terus-menerus.
+- Belum ada alat otomatis yang dapat mendeteksi pelanggaran secara real-time.
+- Informasi pelanggaran sering terlambat diterima pihak yang bertanggung jawab.
+- Bukti kejadian sulit dikumpulkan jika hanya mengandalkan laporan manual.
+
+Dampaknya, sampah dapat menumpuk, lingkungan menjadi tercemar, dan tindak lanjut menjadi lambat karena tidak ada dokumentasi kejadian yang jelas.
+
 ## Tujuan
 
 - Membantu mendeteksi aktivitas pembuangan sampah sembarangan secara real-time.
 - Menghasilkan dokumentasi visual berupa foto bukti saat potensi pelanggaran terdeteksi.
 - Mengirimkan laporan otomatis melalui WhatsApp kepada pihak terkait, seperti Ketua RT.
 - Menyediakan dasar sistem edukasi dan pengawasan lingkungan berbasis AI.
+
+## Ide Solusi
+
+RAMA AI dirancang sebagai sistem pemantau berbasis kamera yang bekerja melalui beberapa tahap:
+
+1. Kamera memantau area lingkungan selama sistem aktif.
+2. Model YOLOv8m mendeteksi objek yang berpotensi menjadi sampah.
+3. Model YOLOv8m-pose membaca pose manusia untuk mengenali gestur membuang.
+4. Logika gabungan dan cooldown digunakan agar laporan tidak terkirim terlalu sering.
+5. Bukti foto dikirim melalui WhatsApp kepada pihak yang bertugas.
+
+Selain fitur pemantauan RT/RW, RAMA AI juga dapat dikembangkan menjadi fitur edukasi warga. Warga dapat mengirim foto sampah melalui WhatsApp, lalu sistem membantu mengenali jenis sampah dan memberi saran pengelolaan.
+
+## Target Pengguna
+
+| Pengguna | Manfaat |
+| --- | --- |
+| Pengurus RT/RW atau petugas lingkungan | Mengetahui kejadian tanpa harus berjaga terus-menerus dan menerima notifikasi foto bukti. |
+| Tim pengembang atau pembina | Mengumpulkan data lokal, melatih ulang model, dan meningkatkan akurasi sistem. |
+| Warga masyarakat | Mendapat edukasi jenis sampah dan cara pengelolaan melalui WhatsApp. |
+
+Project ini tetap mengikuti prinsip Responsible AI: sistem berperan sebagai alat bantu, sedangkan keputusan akhir tetap dilakukan manusia berdasarkan bukti foto dan konteks lapangan.
 
 ## Fitur Utama
 
@@ -97,6 +162,19 @@ Sebagian dataset sudah memiliki file `data.yaml` dengan format YOLO, misalnya:
 - `datasets/raw/organic/data.yaml`
 - `datasets/raw/plastic_bag/data.yaml`
 
+Rencana sumber data yang ditampilkan pada materi visual project:
+
+| Kategori | Jumlah gambar |
+| --- | ---: |
+| Kantong plastik | 2045 |
+| Kemasan makanan | 516 |
+| Puntung rokok | 384 |
+| Kaleng | 243 |
+| Kertas | 223 |
+| Sampah organik | 179 |
+| Kardus | 120 |
+| Botol plastik | 100 |
+
 ## Persyaratan
 
 - Python 3.10 atau lebih baru
@@ -179,6 +257,30 @@ Jika aktivitas pembuangan sampah terdeteksi, sistem akan:
 - mengambil frame bukti,
 - menyimpan gambar ke `test_capture.jpg`,
 - mengirim gambar ke nomor WhatsApp pada `config.json`.
+
+## Fitur WhatsApp
+
+### Chat RT
+
+Fitur Chat RT berfungsi sebagai jalur notifikasi untuk pengurus lingkungan. Alurnya:
+
+1. Kamera memantau area.
+2. AI mendeteksi objek sampah dengan YOLO.
+3. Sistem mengidentifikasi potensi pelanggaran.
+4. Foto bukti diambil otomatis.
+5. Bukti dikirim melalui bot WhatsApp.
+6. Ketua RT menerima laporan dan melakukan tindak lanjut.
+
+### Chat AI Edukasi
+
+Fitur Chat AI berfungsi sebagai sarana edukasi masyarakat. Alurnya:
+
+1. Warga membuka chat WhatsApp RAMA AI.
+2. Warga mengirim foto sampah.
+3. AI menganalisis jenis sampah.
+4. Sistem memberikan penjelasan dan saran pengelolaan.
+
+Fitur ini membuat RAMA AI tidak hanya menjadi sistem pemantauan, tetapi juga media pembelajaran pemilahan sampah yang mudah diakses warga.
 
 ## Mengumpulkan Dataset Baru
 
