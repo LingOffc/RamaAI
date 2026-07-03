@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/readme/rama-avatar.png" alt="Avatar RAMA AI" width="180">
+  <img src="assets/readme/rama-avatar.jpeg" alt="Avatar RAMA AI" width="180">
   <h1>RAMA AI</h1>
   <p><strong>Pemantau AI Berbasis Kamera untuk Deteksi Pembuangan Sampah Sembarangan</strong></p>
   <p>Project LKS Kecerdasan Buatan AI Eksebisi</p>
