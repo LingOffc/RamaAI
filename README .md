@@ -10,6 +10,7 @@ RAMA AI adalah prototipe sistem pemantauan lingkungan berbasis Artificial Intell
 ## Media Sosial dan Video Penjelasan
 
 - Instagram RAMA AI: [@rama.assistant](https://www.instagram.com/rama.assistant/)
+- WhatsApp uji coba RAMA AI: [+62 851-8275-5853](https://wa.me/6285182755853)
 - Video penjelasan project: [Instagram Reel RAMA AI](https://www.instagram.com/reel/DaVkCzAyWYm/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)
 
 ## Dokumentasi Visual
@@ -118,6 +119,8 @@ Project ini tetap mengikuti prinsip Responsible AI: sistem berperan sebagai alat
 - YOLOv8 Object Detection
 - YOLOv8 Pose Estimation
 - OpenClaw CLI untuk pengiriman WhatsApp
+- Model bahasa `qweb:14b` pada OpenClaw yang sudah diberi prompt khusus sesuai kebutuhan RAMA AI
+- Server sekolah sebagai layanan pendukung untuk menjalankan integrasi OpenClaw dan model bahasa
 - Dataset gambar sampah dalam format YOLO
 
 ## Model AI
@@ -268,6 +271,10 @@ Jika aktivitas pembuangan sampah terdeteksi, sistem akan:
 - mengirim gambar ke nomor WhatsApp pada `config.json`.
 
 ## Fitur WhatsApp
+
+Integrasi WhatsApp pada RAMA AI menggunakan OpenClaw yang berjalan melalui server sekolah. Pada sisi pemrosesan bahasa, OpenClaw menggunakan model `qweb:14b` yang sudah diberi prompt khusus agar respons menyesuaikan tugas RAMA AI, seperti pelaporan kejadian ke Ketua RT dan edukasi pemilahan sampah untuk warga.
+
+Detail alamat server, token, dan kredensial tidak dituliskan di README publik agar konfigurasi tetap aman.
 
 ### Chat RT
 
